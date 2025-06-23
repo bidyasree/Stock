@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .menu-img{
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #d9f688;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    transition: height 0.5s;
+}
+
+nav ul li a:hover::before{
+    height: 85px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.feature-img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.thumbnail-img{
+    width: 280px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.col h1{
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.col a{
+    background-color: #d9f688;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 70px;
+    padding: 18px 50px;
+    border-radius: 30px;
+    color: #000;
+    font-weight: 700;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.second-row{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    background-color: #d9f688;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin: 100px;
+    left: 450px;
+}
+
+.cir-img{
+    width: 530px;
+    height: 390px;
+    position: absolute;
+    margin-top: 115px;
+    left: 200px;
+    clip-path: circle();
+    box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(4px 20px 10px rgba(17, 19, 19, 0.5));
+}
+
+.sec-col{
+    margin: 180px auto;
+}
+
+.sm{
+    font-size: 25px;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 400;
+}
+
+.hero-sec{
+    font-size: 75px;
+    margin-bottom: 15px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec-para{
+    text-align: justify;
+}
